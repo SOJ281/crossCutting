@@ -1,0 +1,18 @@
+<h1>Add member</h1>
+
+<form action="addrecord/" method="post">
+{% csrf_token %}
+Title:<br>
+<input name="title">
+<br><br>
+Description:<br>
+<input name="description">
+<br><br>
+Status:<br>
+<input name="status">
+<br><br>
+Date:<br>
+<input type="datetime-local" name="dateTime" required>
+<br><br>
+<input type="submit" value="Submit">
+</form>
